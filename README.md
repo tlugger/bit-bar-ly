@@ -2,7 +2,7 @@ Bit-bar-ly
 ==========
 Bitly click counts in your Mac OS X Menu Bar.
 
-![bit-bar-ly](https://lunavision.s3-us-west-1.amazonaws.com/bit-bar-ly.png)
+![bit-bar-ly](https://lunavision.s3-us-west-1.amazonaws.com/bit-bar-ly.png?v2)
 
 Install
 -------
