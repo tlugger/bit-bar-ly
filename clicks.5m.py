@@ -47,7 +47,7 @@ def plural_or_singular(count):
     return "Clicks"
 
 def get_group_clicks(group_guid):
-    url = "https://api-ssl.bitly.com/v4/groups/{}/countries?unit=hour&units=1".format(group_guid)
+    url = "https://api-ssl.bitly.com/v4/groups/{}/countries?unit=day&units=1".format(group_guid)
     return make_request(url)
 
 def get_default_group():
