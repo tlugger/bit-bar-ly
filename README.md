@@ -12,7 +12,7 @@ Quick Install
 ```
 bitbar://openPlugin?title=bit-bar-ly&src=https://raw.githubusercontent.com/tlugger/bit-bar-ly/master/clicks.5m.py
 ```
-- Select plugin from menu bar (will say 'ACCESS TOKEN REQUIRED' or 'Bitly Request Failed' or show warning)
+- Select plugin from menu bar (will say 'Missing Access Token' or show warning)
 - Select `Run in Terminal`
 - In Terminal enter: `pip install requests emoji-country-flag --user`
 - Select `Preferences` -> `Open Plugin Folder`

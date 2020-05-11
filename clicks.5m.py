@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import requests
+import sys
 from flag import flag
 
 # <bitbar.title>Bitlink Country Clicks</bitbar.title>
@@ -18,8 +19,8 @@ BITLY_GROUP_GUID = ''
 
 def get_clicks():
     if BITLY_ACCESS_TOKEN == '':
-        print "ACCESS TOKEN REQUIRED"
-        exit
+        print "Missing Access Token"
+        sys.exit(0)
 
     group_guid = BITLY_GROUP_GUID
     if group_guid == '':
@@ -59,7 +60,7 @@ def make_request(url):
     resp = requests.get(url, headers={"Authorization": "Bearer {}".format(BITLY_ACCESS_TOKEN)})
     if resp.status_code != 200:
         print "Bitly Request Failed"
-        exit
+        sys.exit(0)
     return resp.json()
 
 get_clicks()
