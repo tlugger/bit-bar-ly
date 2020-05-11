@@ -1,17 +1,23 @@
 Bit-bar-ly
 ==========
 
-[Get BitBar](https://getbitbar.com/)
+### Bitly click counts in your Mac OS X Menu Bar.
 
+![bit-bar-ly](https://lunavision.s3-us-west-1.amazonaws.com/bit-bar-ly.png?v2)
 
-Add plugin to bitbar: 
+Quick Install
+-------------
+- [Get BitBar](https://getbitbar.com/)
+- Add plugin to bitbar: 
 ```
 bitbar://openPlugin?title=bit-bar-ly&src=https://raw.githubusercontent.com/tlugger/bit-bar-ly/master/clicks.5m.py
 ```
-
-Bitly click counts in your Mac OS X Menu Bar.
-
-![bit-bar-ly](https://lunavision.s3-us-west-1.amazonaws.com/bit-bar-ly.png?v2)
+- Select plugin from menu bar (will say 'ACCESS TOKEN REQUIRED' or 'Bitly Request Failed' or show warning)
+- Select `Run in Terminal`
+- In Terminal enter: `pip install requests emoji-country-flag --user`
+- Select `Preferences` -> `Open Plugin Folder`
+- Edit `clicks.5m.py` add your [Bitly access token](https://bitly.is/accesstoken) between the quotes for `BITLY_ACCESS_TOKEN`
+- Optional, set a `BITLY_GROUP_GUID` value if your account has multiple groups
 
 Manual Install
 --------------
